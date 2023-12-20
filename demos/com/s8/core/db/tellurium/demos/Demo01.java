@@ -2,7 +2,7 @@ package com.s8.core.db.tellurium.demos;
 
 import java.io.IOException;
 
-import com.s8.core.db.tellurium.tools.DbInitiator;
+import com.s8.core.db.tellurium.tools.TeDbUtility;
 import com.s8.core.io.json.types.JSON_CompilingException;
 
 /**
@@ -18,8 +18,7 @@ public class Demo01 {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException, JSON_CompilingException {
-		
-		DbInitiator.init("/Users/pc/qx/db/alphaventor.s8app/tables-db");
+		new TeDbUtility("/Users/pc/qx/db/alphaventor.s8app/tables-db").initMetadata();
 	}
 
 }

@@ -16,27 +16,5 @@ import com.s8.core.io.json.utilities.JOOS_BufferedFileWriter;
 public class DbInitiator {
 	
 
-	public static void init(String rootFolderPathname) throws IOException, JSON_CompilingException {
-		
-		/* create database folder */
-		Path rootFolderPath = Path.of(rootFolderPathname);
-		Files.createDirectories(rootFolderPath);
-
-		/* create metadata */
-		TeStoreMetadata metadata = new TeStoreMetadata();
-		metadata.rootFolderPathname = rootFolderPathname;
-		
-		
-		/* delete any previous record */
-		Path metadataFilePath = rootFolderPath.resolve(TeDatabaseHandler.METADATA_FILENAME);
-		Files.delete(metadataFilePath);
-		
-		/* write metadata */
-		FileChannel channel = FileChannel.open(metadataFilePath, StandardOpenOption.WRITE, StandardOpenOption.CREATE);
-		JSON_Lexicon lexicon = JSON_Lexicon.from(TeStoreMetadata.class);
-		JOOS_BufferedFileWriter writer = new JOOS_BufferedFileWriter(channel, StandardCharsets.UTF_8, 256);
-		lexicon.compose(writer, metadata, "   ", false);
-		writer.close();
-	}
 
 }
