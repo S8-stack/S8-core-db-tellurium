@@ -48,7 +48,7 @@ public class TeDbUtility {
 
 		/* delete any previous record */
 		Path metadataFilePath = rootFolderPath.resolve(TeDatabaseHandler.METADATA_FILENAME);
-		Files.delete(metadataFilePath);
+		Files.deleteIfExists(metadataFilePath);
 
 		/* write metadata */
 		FileChannel channel = FileChannel.open(metadataFilePath, StandardOpenOption.WRITE, StandardOpenOption.CREATE);
