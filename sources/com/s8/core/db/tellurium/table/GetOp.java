@@ -52,8 +52,7 @@ class GetOp extends RequestDbMgOperation<BeBranch> {
 			@Override
 			public boolean consumeResource(BeBranch branch) throws BeIOException {
 				RowS8Object object =  (RowS8Object) branch.get(request.rowKey);
-				GetRowS8Request.Status status = object != null ? Status.OK : Status.NOT_FOUND;
-				request.onSucceed(status , object);
+				request.onSucceed(Status.OK, object);
 				callback.call();
 				return false;
 			}
