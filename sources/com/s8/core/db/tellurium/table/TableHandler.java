@@ -8,10 +8,10 @@ import com.s8.api.flow.table.objects.RowS8Object;
 import com.s8.api.flow.table.requests.GetRowS8Request;
 import com.s8.api.flow.table.requests.PutRowS8Request;
 import com.s8.api.flow.table.requests.SelectRowsS8Request;
-import com.s8.core.arch.magnesium.handlers.h3.H3MgHandler;
-import com.s8.core.arch.magnesium.handlers.h3.H3MgIOModule;
 import com.s8.core.arch.silicon.SiliconChainCallback;
 import com.s8.core.arch.silicon.SiliconEngine;
+import com.s8.core.arch.titanium.handlers.h3.H3MgHandler;
+import com.s8.core.arch.titanium.handlers.h3.H3MgIOModule;
 import com.s8.core.bohr.beryllium.branch.BeBranch;
 import com.s8.core.db.tellurium.store.TeStore;
 

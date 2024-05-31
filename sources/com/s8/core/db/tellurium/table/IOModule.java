@@ -6,7 +6,7 @@ import java.nio.file.LinkOption;
 import java.nio.file.Path;
 
 import com.s8.api.bytes.ByteInflow;
-import com.s8.core.arch.magnesium.handlers.h3.H3MgIOModule;
+import com.s8.core.arch.titanium.handlers.h3.H3MgIOModule;
 import com.s8.core.bohr.beryllium.branch.BeBranch;
 import com.s8.core.bohr.beryllium.branch.BeInbound;
 import com.s8.core.bohr.beryllium.branch.BeOutbound;

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.s8.api.flow.repository.objects.RepoS8Object;
-import com.s8.core.arch.magnesium.handlers.h3.H3MgHandler;
+import com.s8.core.arch.titanium.handlers.h3.H3MgHandler;
 import com.s8.core.bohr.beryllium.codebase.BeCodebase;
 import com.s8.core.db.tellurium.table.TableHandler;
 
