@@ -5,13 +5,13 @@ import java.util.regex.Pattern;
 
 import com.s8.api.flow.table.objects.S8Table;
 
-public class TableIdvalidator {
+public class TableIdValidator {
 	
 	
 	
 	
 	public static void main(String[] args) {
-		System.out.println(TableIdvalidator.validate("table-Tgzer012973_gXCv"));
+		System.out.println(TableIdValidator.validate("table-Tgzer012973_gXCv"));
 	}
 	
 	
